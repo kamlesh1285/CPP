@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lost Human Finder</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f7fb;
+        }
+
+        /* Navbar */
+        nav {
+            background: #1e3a8a;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 40px;
+            background: linear-gradient(to right, #2563eb, #1e3a8a);
+            color: white;
+        }
+
+        .hero h1 {
+            margin-bottom: 10px;
+        }
+
+        /* Container */
+        .container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 30px;
+        }
+
+        /* Card */
+        .card {
+            background: white;
+            width: 350px;
+            padding: 20px;
+            margin: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .card h2 {
+            text-align: center;
+            margin-bottom: 15px;
+            color: #1e3a8a;
+        }
+
+        /* Form Inputs */
+        input, textarea {
+            width: 100%;
+            margin: 8px 0;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        /* Button */
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #1e3a8a;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #1e3a8a;
+            color: white;
+            margin-top: 20px;
+        }
+
+        /* Responsive */
+        @media(max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        Lost Human Finder
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Find Missing People Faster</h1>
+        <p>Report missing persons or sightings to help reunite families.</p>
+    </div>
+
+    <!-- Forms Section -->
+    <div class="container">
+
+        <!-- Missing Person Form -->
+        <div class="card">
+            <h2>Report Missing Person</h2>
+            <input type="text" placeholder="Full Name">
+            <input type="number" placeholder="Age">
+            <input type="text" placeholder="Last Seen Location">
+            <input type="file">
+            <textarea rows="4" placeholder="Description"></textarea>
+            <button>Submit Report</button>
+        </div>
+
+        <!-- Found Person Form -->
+        <div class="card">
+            <h2>Report Sighting</h2>
+            <input type="text" placeholder="Location Found">
+            <input type="file">
+            <textarea rows="4" placeholder="Details"></textarea>
+            <button>Submit Sighting</button>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        © 2026 Lost Human Finder | Hackathon Project
+    </footer>
+
+</body>
+</html>
